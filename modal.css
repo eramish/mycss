@@ -1,0 +1,160 @@
+.modal-dialog{
+    top:25px;
+}
+/*.modal-title
+{
+    margin: 0;
+    line-height: 1.42857143;
+    
+    width:100%;
+}*/
+.modal-title-buttton{
+/*    width: 100%;*/
+    display: inline-block;
+    float: right;
+    text-align: right !important;
+    z-index: 99;
+}
+/*.modal-header{
+    position: absolute;
+    top: 0px;
+    left: -1px;
+    width: 100%;
+    height: 3em;
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    padding-left: 1em;
+    border-top-left-radius: 3px;
+    color: #1f3057 !important;
+    background: url('../../images/bg.png');
+
+
+
+}*/
+
+/*/ Modal Body /*/
+.modal-body {
+    /*    padding: 2px 16px;*/
+    padding:5px;
+/*    margin-top:3em;*/
+    text-align: left;
+}
+
+/*/ Modal Footer /*/
+.modal-footer {
+    padding: 2px 16px;
+    /*background-color: #5cb85c;*/
+    /*color: white;*/
+    background-color: #fff;
+    color: black;
+}
+
+/*/ Modal Content /*/
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+.modal-xl{
+    width:95% !important;
+    margin:0px auto !important;
+}
+.modal-lg{
+    width:85% !important;
+    margin:0px auto !important;
+}
+.modal-md{
+    width:75% !important;
+    margin:0px auto !important;
+}
+.modal-sm{
+    width:60% !important;
+    margin:0px auto !important;
+}
+.modal-xh{
+    width:50% !important;
+    margin:0px auto !important;
+}
+.modal-xs{
+    width:30% !important;
+    margin:0px auto !important;
+}
+@media only screen and (max-width: 600px) {
+    .modal-dialog{
+        top:25px;
+    }
+    .modal-xl{
+        width:95% !important;
+        margin:0px auto !important;
+    }
+    .modal-lg{
+        width:95% !important;
+        margin:0px auto !important;
+    }
+    .modal-md{
+        width:95% !important;
+        margin:0px auto !important;
+    }
+    .modal-sm{
+        width:95% !important;
+        margin:0px auto !important;
+    }
+    .modal-xh{
+        width:95% !important;
+        margin:0px auto !important;
+    }
+    .modal-xs{
+        width:95% !important;
+        margin:0px auto !important;
+    }
+}
+
+/*/ Add Animation /*/
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+.modal.left .modal-dialog,
+.modal.right .modal-dialog {
+    position: fixed;
+    margin: auto;
+
+
+}
+.right .modal-body,left .modal-body {
+    height: 100vh !important;
+}
+
+
+
+
+/*Left*/
+.modal.left.fade .modal-dialog{
+    left:0px;
+    -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+    -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+    -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+    transition: opacity 0.3s linear, left 0.3s ease-out;
+}
+
+
+
+/*Right*/
+.modal.right.fade .modal-dialog {
+    right:0px;
+    -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+    -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+    -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+    transition: opacity 0.3s linear, right 0.3s ease-out;
+}
+
+
